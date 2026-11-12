@@ -1,0 +1,55 @@
+# Exemplo; ajustar caminhos e mesclar com a configuração existente.
+
+[mcp_servers.artcraft_photocraft]
+command = "C:/Tools/audio-visual/ArtCraft/photocraft-0.8.2-windows-x64-portable/photocraft-cli.exe"
+args = ["mcp", "--automation-read-root", "C:/Tools/audio-visual/trabalho", "--automation-write-root", "C:/Tools/audio-visual/trabalho/saida"]
+enabled = true
+startup_timeout_sec = 30
+
+[mcp_servers.artcraft_vectorcraft]
+command = "C:/Tools/audio-visual/ArtCraft/vectorcraft-0.10.0-windows-x64-portable/vectorcraft-cli.exe"
+args = ["mcp", "--automation-read-root", "C:/Tools/audio-visual/trabalho", "--automation-write-root", "C:/Tools/audio-visual/trabalho/saida"]
+enabled = true
+startup_timeout_sec = 30
+
+[mcp_servers.artcraft_effectcraft]
+command = "C:/Tools/audio-visual/ArtCraft/effectcraft-0.9.2-windows-x64-portable/effectcraft-cli.exe"
+args = ["mcp", "--automation-read-root", "C:/Tools/audio-visual/trabalho", "--automation-write-root", "C:/Tools/audio-visual/trabalho/saida"]
+enabled = true
+startup_timeout_sec = 30
+
+[mcp_servers.artcraft_pdfcraft]
+command = "C:/Tools/audio-visual/ArtCraft/pdfcraft-0.7.1-windows-x64-portable/pdfcraft-cli.exe"
+args = ["mcp", "--root", "C:/Tools/audio-visual/trabalho", "--compact"]
+enabled = true
+startup_timeout_sec = 30
+
+[mcp_servers.artcraft_lightcraft]
+command = "C:/Tools/audio-visual/ArtCraft/lightcraft-0.7.1-windows-x64-portable/lightcraft-cli.exe"
+args = ["mcp", "--library", "C:/Tools/audio-visual/trabalho/lightcraft-biblioteca", "--compact"]
+enabled = true
+startup_timeout_sec = 30
+
+[mcp_servers.artcraft_filmcraft]
+command = "C:/Tools/audio-visual/ArtCraft/filmcraft-0.7.2-windows-x64-portable/filmcraft-cli.exe"
+args = ["mcp"]
+enabled = true
+startup_timeout_sec = 30
+
+[mcp_servers.artcraft_designcraft]
+command = "C:/Tools/audio-visual/ArtCraft/designcraft-0.7.1-windows-x64-portable/designcraft-cli.exe"
+args = ["mcp"]
+enabled = true
+startup_timeout_sec = 30
+
+[mcp_servers.voicestudio]
+command = "C:/Tools/audio-visual/VoiceStudio/resources/.venv/Scripts/python.exe"
+args = ["C:/Tools/audio-visual/voice-runtime/launcher.py", "--mcp"]
+enabled = true
+startup_timeout_sec = 180
+tool_timeout_sec = 900
+
+[mcp_servers.wangp]
+command = 'D:\WanGP\env_uv\Scripts\python.exe'
+args = ["-m", "shared.mcp", "--root", 'D:\WanGP', "--transport", "stdio", "--mcp-api-version", "2.1", "--mcp-async"]
+enabled = true

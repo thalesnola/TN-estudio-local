@@ -1,0 +1,343 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1240" width="1000" height="1240">
+  <defs>
+    <!-- Degradê de fundo suave Motion -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F3EEFF"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E9F7FF"/>
+    </linearGradient>
+
+    <!-- Ambient Glows em SVG Puro (compatível com GitHub Camo/sanitizer) -->
+    <radialGradient id="glow_pink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF7AC6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FF7AC6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow_blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2F9BFF" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#2F9BFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow_purple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow_green" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Motion Trails Diagonais -->
+    <linearGradient id="trail_purple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8A5CF6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#8A5CF6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#8A5CF6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="trail_blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="trail_pink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#EC4899" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Marcadores de Seta Hierárquica -->
+    <marker id="arr_purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#7C3AED" stroke-width="1.8"/>
+    </marker>
+    <marker id="arr_slate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#64748B" stroke-width="1.8"/>
+    </marker>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="1000" height="1240" fill="url(#bg)"/>
+
+  <!-- Ambient Glows com Pulsação Suave (SMIL Nativo) -->
+  <circle cx="900" cy="120" r="240" fill="url(#glow_pink)">
+    <animate attributeName="r" values="230;260;230" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="980" r="260" fill="url(#glow_blue)">
+    <animate attributeName="r" values="250;280;250" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="480" r="300" fill="url(#glow_purple)">
+    <animate attributeName="r" values="285;315;285" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="880" cy="860" r="220" fill="url(#glow_green)">
+    <animate attributeName="r" values="210;240;210" dur="7.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Motion Trails Diagonais (-12deg) com Deslocamento Contínuo -->
+  <g transform="rotate(-12 260 93)">
+    <rect x="110" y="80" width="290" height="26" rx="13" fill="url(#trail_purple)">
+      <animate attributeName="x" values="95;135;95" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g transform="rotate(-12 810 520)">
+    <rect x="660" y="508" width="270" height="24" rx="12" fill="url(#trail_blue)">
+      <animate attributeName="x" values="645;685;645" dur="6.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g transform="rotate(-12 210 860)">
+    <rect x="80" y="848" width="250" height="22" rx="11" fill="url(#trail_pink)">
+      <animate attributeName="x" values="65;105;65" dur="7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- CABEÇALHO PRINCIPAL                                                       -->
+  <!-- ========================================================================= -->
+  <rect x="60" y="32" width="440" height="26" rx="13" fill="#EDE9FE" stroke="#DDD6FE" stroke-width="1"/>
+  <text x="280" y="49" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#6D28D9" text-anchor="middle" letter-spacing="0.5">ARQUITETURA HIERARQUIZADA · MÍDIA, 3D, ÁUDIO, CÓDIGO &amp; RETENÇÃO</text>
+  <text x="60" y="82" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="26" font-weight="800" fill="#1B1F3B">TN-estudio-local · Central Unificada de Produção Audiovisual</text>
+  <text x="60" y="108" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13.5" font-weight="500" fill="#4A5568">Fusão estruturada de dois repositórios anteriores com a esteira Apple Silicon (MLX/VideoToolbox), MCP 3D e metodologia de retenção.</text>
+
+  <!-- ========================================================================= -->
+  <!-- NÍVEL 1: ORIGEM E CONSOLIDAÇÃO DOS REPOSITÓRIOS (3 FONTES -> NÚCLEO)      -->
+  <!-- ========================================================================= -->
+  <!-- Fonte 1: ferramentas-audio-visuais -->
+  <rect x="62" y="136" width="276" height="118" rx="14" fill="#1B1F3B" fill-opacity="0.06"/>
+  <rect x="61" y="133" width="276" height="118" rx="14" fill="#1B1F3B" fill-opacity="0.04"/>
+  <rect x="60" y="130" width="276" height="118" rx="14" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+  <rect x="74" y="142" width="128" height="20" rx="10" fill="#EDE9FE"/>
+  <text x="138" y="156" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="800" fill="#6D28D9" text-anchor="middle">REPO DE ORIGEM 1</text>
+  <text x="74" y="180" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#1B1F3B">ferramentas-audio-visuais</text>
+  <text x="74" y="199" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="400" fill="#475569">
+    <tspan x="74" dy="0">• ArtCraft (7 apps MCP) + Blender 3D</tspan>
+    <tspan x="74" dy="16">• VoiceStudio (OmniVoice) + WanGP CUDA</tspan>
+    <tspan x="74" dy="16">• Earshot LUFS, Openverse CC e Emblemas</tspan>
+  </text>
+
+  <!-- Fonte 2: producao-midia-design -->
+  <rect x="364" y="136" width="276" height="118" rx="14" fill="#1B1F3B" fill-opacity="0.06"/>
+  <rect x="363" y="133" width="276" height="118" rx="14" fill="#1B1F3B" fill-opacity="0.04"/>
+  <rect x="362" y="130" width="276" height="118" rx="14" fill="#FFFFFF" stroke="#FBCFE8" stroke-width="1.5"/>
+  <rect x="376" y="142" width="128" height="20" rx="10" fill="#FCE7F3"/>
+  <text x="440" y="156" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="800" fill="#DB2777" text-anchor="middle">REPO DE ORIGEM 2</text>
+  <text x="376" y="180" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#1B1F3B">producao-midia-design</text>
+  <text x="376" y="199" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="400" fill="#475569">
+    <tspan x="376" dy="0">• Remotion (React/TS em lote a 60 fps)</tspan>
+    <tspan x="376" dy="16">• HyperFrames (composições HTML/CSS)</tspan>
+    <tspan x="376" dy="16">• Skills de Animação 2D e 3D estilizada</tspan>
+  </text>
+
+  <!-- Fonte 3: Novo Ciclo Local & Retenção -->
+  <rect x="666" y="136" width="274" height="118" rx="14" fill="#1B1F3B" fill-opacity="0.06"/>
+  <rect x="665" y="133" width="274" height="118" rx="14" fill="#1B1F3B" fill-opacity="0.04"/>
+  <rect x="664" y="130" width="274" height="118" rx="14" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5"/>
+  <rect x="678" y="142" width="144" height="20" rx="10" fill="#E0F2FE"/>
+  <text x="750" y="156" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="800" fill="#0284C7" text-anchor="middle">EXPANSÃO DESTE CICLO</text>
+  <text x="678" y="180" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#1B1F3B">M5 Pro Local &amp; Skills Auditadas</text>
+  <text x="678" y="199" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="400" fill="#475569">
+    <tspan x="678" dy="0">• video_local_m5.py (LTX-2 MLX / SeedVR2)</tspan>
+    <tspan x="678" dy="16">• Mocap MediaPipe → Blender 3D</tspan>
+    <tspan x="678" dy="16">• youtube-agent, awesome-ai-motion (637)</tspan>
+  </text>
+
+  <!-- Linhas de Convergência Hierárquica (Nível 1 -> Núcleo Central) -->
+  <path d="M198 248 L198 266 L500 266 L500 282" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <path d="M500 248 L500 282" fill="none" stroke="#EC4899" stroke-width="1.8" marker-end="url(#arr_purple)"/>
+  <path d="M801 248 L801 266 L500 266 L500 282" fill="none" stroke="#0284C7" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <circle cx="500" cy="266" r="4.5" fill="#7C3AED">
+    <animate attributeName="r" values="3.5;6;3.5" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ========================================================================= -->
+  <!-- NÚCLEO CENTRAL: METODOLOGIA EM 5 CAMADAS & GOVERNANÇA                     -->
+  <!-- ========================================================================= -->
+  <rect x="62" y="292" width="880" height="86" rx="16" fill="#1B1F3B" fill-opacity="0.08"/>
+  <rect x="60" y="286" width="880" height="86" rx="16" fill="#1B1F3B" stroke="#334155" stroke-width="1.5"/>
+  <rect x="78" y="300" width="168" height="22" rx="11" fill="#EC4899"/>
+  <text x="162" y="315" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.4">NÚCLEO · METODOLOGIA</text>
+  <text x="260" y="316" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="14.5" font-weight="800" fill="#FFFFFF">Camadas 1 e 2 · Descoberta de Outliers (/yt-viral) + Roteiro &amp; Gancho (/yt-script)</text>
+  <text x="78" y="340" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="11" font-weight="500" fill="#E2E8F0">Filtra tópicos com múltiplo &gt;= 3x sobre o piso do canal, pontua o gancho (hookscore.py &gt;= 70/100 em 21 fórmulas),</text>
+  <text x="78" y="357" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="11" font-weight="500" fill="#F472B6">valida pacote título+thumb (package.py) e despacha cada cena para uma das 4 Estações de Produção abaixo:</text>
+
+  <!-- Barramento Hierárquico (Núcleo -> 4 Estações) -->
+  <line x1="500" y1="372" x2="500" y2="390" stroke="#64748B" stroke-width="1.8"/>
+  <line x1="162" y1="390" x2="838" y2="390" stroke="#64748B" stroke-width="1.8"/>
+  <line x1="162" y1="390" x2="162" y2="408" stroke="#64748B" stroke-width="1.8" marker-end="url(#arr_slate)"/>
+  <line x1="387" y1="390" x2="387" y2="408" stroke="#64748B" stroke-width="1.8" marker-end="url(#arr_slate)"/>
+  <line x1="612" y1="390" x2="612" y2="408" stroke="#64748B" stroke-width="1.8" marker-end="url(#arr_slate)"/>
+  <line x1="838" y1="390" x2="838" y2="408" stroke="#64748B" stroke-width="1.8" marker-end="url(#arr_slate)"/>
+
+  <!-- ========================================================================= -->
+  <!-- NÍVEL 2: AS 4 ESTAÇÕES / ROTAS DE PRODUÇÃO (CAMADA 3 E 4)                 -->
+  <!-- ========================================================================= -->
+  <!-- Estação A: Vídeo por Código -->
+  <rect x="62" y="420" width="205" height="270" rx="16" fill="#1B1F3B" fill-opacity="0.06"/>
+  <rect x="61" y="416" width="205" height="270" rx="16" fill="#1B1F3B" fill-opacity="0.04"/>
+  <rect x="60" y="412" width="205" height="270" rx="16" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+  <rect x="72" y="424" width="112" height="20" rx="10" fill="#EDE9FE"/>
+  <text x="128" y="438" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="800" fill="#7C3AED" text-anchor="middle">ROTA A · CÓDIGO</text>
+  <text x="72" y="462" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#1B1F3B">Vídeo Programático</text>
+  <text x="72" y="479" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="600" fill="#6D28D9">video-codigo/ · skills-animacao/</text>
+  <text x="72" y="501" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="400" fill="#475569">
+    <tspan x="72" dy="0">• awesome-ai-motion (637 efeitos</tspan>
+    <tspan x="72" dy="15">  GSAP indexados + render.mjs)</tspan>
+    <tspan x="72" dy="17">• bang-motion (11 estética/cenas)</tspan>
+    <tspan x="72" dy="17">• vox-explainer (documentário)</tspan>
+    <tspan x="72" dy="17">• anidoodle &amp; claude-drawing</tspan>
+    <tspan x="72" dy="17">• Remotion (React) &amp; HyperFrames</tspan>
+    <tspan x="72" dy="17">• Zero crédito de API externa</tspan>
+  </text>
+  <rect x="72" y="646" width="181" height="24" rx="8" fill="#F5F3FF"/>
+  <text x="162" y="662" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="700" fill="#6D28D9" text-anchor="middle">Playwright + FFmpeg 60fps</text>
+
+  <!-- Estação B: 3D Blender & ArtCraft MCP -->
+  <rect x="287" y="420" width="205" height="270" rx="16" fill="#1B1F3B" fill-opacity="0.06"/>
+  <rect x="286" y="416" width="205" height="270" rx="16" fill="#1B1F3B" fill-opacity="0.04"/>
+  <rect x="285" y="412" width="205" height="270" rx="16" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5"/>
+  <rect x="297" y="424" width="118" height="20" rx="10" fill="#E0F2FE"/>
+  <text x="356" y="438" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="800" fill="#0284C7" text-anchor="middle">ROTA B · 3D &amp; MCP</text>
+  <text x="297" y="462" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#1B1F3B">Blender &amp; ArtCraft</text>
+  <text x="297" y="479" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="600" fill="#0284C7">artcraft/ · macos-pessoal/ · 3d/</text>
+  <text x="297" y="501" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="400" fill="#475569">
+    <tspan x="297" dy="0">• 7 apps ArtCraft via MCP local:</tspan>
+    <tspan x="297" dy="15">  Photo, Vector, Effect, Pdf, Light,</tspan>
+    <tspan x="297" dy="15">  Film e DesignCraft (SHA-256)</tspan>
+    <tspan x="297" dy="17">• Blender 5.3 Metal/CPU headless</tspan>
+    <tspan x="297" dy="17">• Emblemas 3D por máscara/relevo</tspan>
+    <tspan x="297" dy="17">• aplicar_emblema.py (oficial intacto)</tspan>
+    <tspan x="297" dy="17">• Mocap: mediapipe_mocap.py</tspan>
+  </text>
+  <rect x="297" y="646" width="181" height="24" rx="8" fill="#F0F9FF"/>
+  <text x="387" y="662" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="700" fill="#0284C7" text-anchor="middle">Geometria PBR &amp; Emblema Fiel</text>
+
+  <!-- Estação C: Generativo Local & Híbrido -->
+  <rect x="512" y="420" width="205" height="270" rx="16" fill="#1B1F3B" fill-opacity="0.06"/>
+  <rect x="511" y="416" width="205" height="270" rx="16" fill="#1B1F3B" fill-opacity="0.04"/>
+  <rect x="510" y="412" width="205" height="270" rx="16" fill="#FFFFFF" stroke="#FDE68A" stroke-width="1.5"/>
+  <rect x="522" y="424" width="128" height="20" rx="10" fill="#FEF3C7"/>
+  <text x="586" y="438" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="800" fill="#D97706" text-anchor="middle">ROTA C · GENERATIVO</text>
+  <text x="522" y="462" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#1B1F3B">Vídeo IA Local &amp; Flow</text>
+  <text x="522" y="479" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="600" fill="#D97706">scripts/video/ · generativo/ · wangp/</text>
+  <text x="522" y="501" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="400" fill="#475569">
+    <tspan x="522" dy="0">• video_local_m5.py (Apple Silicon):</tspan>
+    <tspan x="522" dy="15">  LTX-2 19B MLX + Z-Image-Turbo</tspan>
+    <tspan x="522" dy="17">• Upscale neural SeedVR2 Metal</tspan>
+    <tspan x="522" dy="17">• pixelmator_lote.py (Super Res)</tspan>
+    <tspan x="522" dy="17">• WanGP (CUDA local em Windows)</tspan>
+    <tspan x="522" dy="17">• Google Flow (Veo 3.1 / Omni 1.1</tspan>
+    <tspan x="522" dy="15">  diorama pop-up book em 1080p)</tspan>
+  </text>
+  <rect x="522" y="646" width="181" height="24" rx="8" fill="#FFFBEB"/>
+  <text x="612" y="662" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="700" fill="#D97706" text-anchor="middle">MLX Metal / CUDA / Flow 1080p</text>
+
+  <!-- Estação D: Voz Neural, Som & Auditoria -->
+  <rect x="737" y="420" width="205" height="270" rx="16" fill="#1B1F3B" fill-opacity="0.06"/>
+  <rect x="736" y="416" width="205" height="270" rx="16" fill="#1B1F3B" fill-opacity="0.04"/>
+  <rect x="735" y="412" width="205" height="270" rx="16" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="1.5"/>
+  <rect x="747" y="424" width="128" height="20" rx="10" fill="#DCFCE7"/>
+  <text x="811" y="438" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="800" fill="#16A34A" text-anchor="middle">ROTA D · SOM &amp; VOZ</text>
+  <text x="747" y="462" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#1B1F3B">Áudio &amp; Conferência</text>
+  <text x="747" y="479" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="600" fill="#16A34A">voicestudio/ · sons/ · tests/</text>
+  <text x="747" y="501" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="400" fill="#475569">
+    <tspan x="747" dy="0">• VoiceStudio (OmniVoice offline)</tspan>
+    <tspan x="747" dy="17">• Transcrição Metal (mlx_audio.stt</tspan>
+    <tspan x="747" dy="15">  Whisper Large-v3-Turbo local)</tspan>
+    <tspan x="747" dy="17">• earshot (medição LUFS offline)</tspan>
+    <tspan x="747" dy="17">• openverse-sfx (CC com atribuição)</tspan>
+    <tspan x="747" dy="17">• deadair.py (corte &gt; 400ms silêncio)</tspan>
+    <tspan x="747" dy="17">• smoke_media.py (FFmpeg+Blender)</tspan>
+  </text>
+  <rect x="747" y="646" width="181" height="24" rx="8" fill="#F0FDF4"/>
+  <text x="837" y="662" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="700" fill="#16A34A" text-anchor="middle">Master -14 LUFS + Whisper</text>
+
+  <!-- ========================================================================= -->
+  <!-- NÍVEL 3: BLOCO DE DEMONSTRAÇÃO PRÁTICA (ESTEIRA PONTA A PONTA)            -->
+  <!-- ========================================================================= -->
+  <rect x="62" y="718" width="880" height="224" rx="22" fill="#1B1F3B" fill-opacity="0.06"/>
+  <rect x="61" y="714" width="880" height="224" rx="22" fill="#1B1F3B" fill-opacity="0.04"/>
+  <rect x="60" y="710" width="880" height="224" rx="22" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <rect x="80" y="724" width="235" height="24" rx="12" fill="#1B1F3B"/>
+  <text x="197" y="740" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="800" fill="#60A5FA" text-anchor="middle" letter-spacing="0.8">ESTEIRA OPERACIONAL E2E</text>
+  <text x="330" y="741" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#64748B">Como um vídeo pericial, institucional ou infantil percorre o repositório</text>
+
+  <!-- Coluna 1: Planejamento & Spec -->
+  <rect x="84" y="768" width="260" height="150" rx="14" fill="#1B1F3B" fill-opacity="0.06"/>
+  <rect x="82" y="762" width="260" height="150" rx="14" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+  <rect x="94" y="774" width="124" height="20" rx="10" fill="#EDE9FE"/>
+  <text x="156" y="788" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="800" fill="#7C3AED" text-anchor="middle">1. ROTEIRO &amp; GANCHO</text>
+  <text x="96" y="812" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#1B1F3B">Outlier + Spec Declarativo</text>
+  <text x="96" y="832" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="400" fill="#475569">
+    <tspan x="96" dy="0">• /yt-viral e /yt-script geram cenas</tspan>
+    <tspan x="96" dy="16">• hookscore.py exige nota &gt;= 70/100</tspan>
+    <tspan x="96" dy="16">• Define rota visual por seção (A–D)</tspan>
+    <tspan x="96" dy="16">• Separa o que é sigiloso (100% local)</tspan>
+  </text>
+
+  <!-- Seta 1 -> 2 com pulso animado -->
+  <circle cx="359" cy="837" r="14" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1.5">
+    <animate attributeName="r" values="13;15.5;13" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="359" y="842" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#7C3AED" text-anchor="middle">→</text>
+
+  <!-- Coluna 2: Render & Composição -->
+  <rect x="379" y="768" width="260" height="150" rx="14" fill="#1B1F3B" fill-opacity="0.06"/>
+  <rect x="377" y="762" width="260" height="150" rx="14" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5"/>
+  <rect x="389" y="774" width="138" height="20" rx="10" fill="#E0F2FE"/>
+  <text x="458" y="788" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="800" fill="#0284C7" text-anchor="middle">2. EXECUÇÃO HÍBRIDA</text>
+  <text x="391" y="812" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#1B1F3B">Render + Emblema Oficial</text>
+  <text x="391" y="832" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="400" fill="#475569">
+    <tspan x="391" dy="0">• Cenas 2D/3D em Playwright/Blender</tspan>
+    <tspan x="391" dy="16">• Clipes LTX-2 MLX ou diorama Flow</tspan>
+    <tspan x="391" dy="16">• Emblema real via aplicar_emblema.py</tspan>
+    <tspan x="391" dy="16">• ProRes/HEVC via VideoToolbox</tspan>
+  </text>
+
+  <!-- Seta 2 -> 3 com pulso animado -->
+  <circle cx="654" cy="837" r="14" fill="#E0F2FE" stroke="#7DD3FC" stroke-width="1.5">
+    <animate attributeName="r" values="13;15.5;13" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="654" y="842" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#0284C7" text-anchor="middle">→</text>
+
+  <!-- Coluna 3: Auditoria & Retenção -->
+  <rect x="674" y="768" width="260" height="150" rx="14" fill="#1B1F3B" fill-opacity="0.06"/>
+  <rect x="672" y="762" width="260" height="150" rx="14" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="1.5"/>
+  <rect x="684" y="774" width="142" height="20" rx="10" fill="#DCFCE7"/>
+  <text x="755" y="788" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="800" fill="#16A34A" text-anchor="middle">3. AUDITORIA &amp; ENTREGA</text>
+  <text x="686" y="812" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#1B1F3B">Verificação + Camada 5</text>
+  <text x="686" y="832" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" font-weight="400" fill="#475569">
+    <tspan x="686" dy="0">• Folha de contato visual + LUFS -14</tspan>
+    <tspan x="686" dy="16">• Transcrição Whisper fonema a fonema</tspan>
+    <tspan x="686" dy="16">• Corte de silêncios (deadair.py)</tspan>
+    <tspan x="686" dy="16">• Auditoria pós-pub (retention.py)</tspan>
+  </text>
+
+  <!-- ========================================================================= -->
+  <!-- NÍVEL 4: MAPA DE DIRETÓRIOS & GLOSSÁRIO TÉCNICO                           -->
+  <!-- ========================================================================= -->
+  <rect x="60" y="952" width="880" height="162" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="78" y="966" width="196" height="20" rx="10" fill="#F1F5F9"/>
+  <text x="176" y="980" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="9.5" font-weight="800" fill="#334155" text-anchor="middle">MAPA HIERÁRQUICO DE PASTAS</text>
+
+  <!-- Coluna Esquerda do Mapa -->
+  <text x="78" y="1006" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" fill="#475569">
+    <tspan x="78" dy="0"><tspan font-weight="700" fill="#1B1F3B">metodologia/</tspan> — Pipeline em 5 camadas + roteamento</tspan>
+    <tspan x="78" dy="18"><tspan font-weight="700" fill="#1B1F3B">artcraft/ &amp; macos-pessoal/</tspan> — 7 apps MCP + arm64 SHA-256</tspan>
+    <tspan x="78" dy="18"><tspan font-weight="700" fill="#1B1F3B">scripts/video/ &amp; 3d/</tspan> — video_local_m5, emblema, mocap</tspan>
+    <tspan x="78" dy="18"><tspan font-weight="700" fill="#1B1F3B">skills-animacao/</tspan> — 2D/3D próprias + 8 skills auditadas</tspan>
+    <tspan x="78" dy="18"><tspan font-weight="700" fill="#1B1F3B">video-codigo/</tspan> — HTML/Canvas/SVG/GSAP → MP4 determinístico</tspan>
+  </text>
+
+  <!-- Coluna Direita do Mapa -->
+  <text x="510" y="1006" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="10.5" fill="#475569">
+    <tspan x="510" dy="0"><tspan font-weight="700" fill="#1B1F3B">generativo/ &amp; wangp/</tspan> — Google Flow (Veo/Omni) + WanGP CUDA</tspan>
+    <tspan x="510" dy="18"><tspan font-weight="700" fill="#1B1F3B">voicestudio/ &amp; sons/</tspan> — OmniVoice, Earshot LUFS, Openverse CC</tspan>
+    <tspan x="510" dy="18"><tspan font-weight="700" fill="#1B1F3B">hypit/ &amp; codex/</tspan> — Direção generativa e integrações MCP</tspan>
+    <tspan x="510" dy="18"><tspan font-weight="700" fill="#1B1F3B">docs/</tspan> — Regras de emblema, relevo 3D, decks .pptx e Flow</tspan>
+    <tspan x="510" dy="18"><tspan font-weight="700" fill="#1B1F3B">tests/</tspan> — test_skills.py + test_artcraft.py + smoke_media.py</tspan>
+  </text>
+
+  <!-- ========================================================================= -->
+  <!-- FAIXA NAVY INFERIOR DE CONCLUSÃO TÉCNICA                                  -->
+  <!-- ========================================================================= -->
+  <rect x="60" y="1132" width="880" height="72" rx="18" fill="#1B1F3B"/>
+  <circle cx="96" cy="1168" r="16" fill="#3B82F6" fill-opacity="0.25"/>
+  <text x="96" y="1173" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="16" font-weight="800" fill="#60A5FA" text-anchor="middle">✓</text>
+  <text x="126" y="1162" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="13.5" font-weight="800" fill="#FFFFFF"> Soberania Local, Identidade Oficial Intacta e Retenção Medida por Dados</text>
+  <text x="126" y="1182" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="11" font-weight="500" fill="#94A3B8">Emblemas oficiais nunca são redesenhados por IA · Zero vazamento de dados sensíveis · Testes automatizados (9/9 verdes).</text>
+</svg>

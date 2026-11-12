@@ -1,0 +1,1 @@
+# macOS\n\nA documentação macOS está em [macos-pessoal/](macos-pessoal/README.md) e [macos-pessoal/MACOS.md](macos-pessoal/MACOS.md). Windows: [windows/](windows/README.md).\n

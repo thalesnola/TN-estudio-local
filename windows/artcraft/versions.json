@@ -1,0 +1,48 @@
+{
+  "verified_on": "2026-11-06",
+  "platform": "windows-x64",
+  "applications": [
+    {
+      "name": "photocraft",
+      "version": "0.8.2",
+      "source": "https://github.com/storytold/photocraft",
+      "cli_sha256": "d2f9e77c0f06372963f87a5ac8279c2b14dabd8ab76ed38aab1d92a874ccbbee"
+    },
+    {
+      "name": "vectorcraft",
+      "version": "0.10.0",
+      "source": "https://github.com/storytold/vectorcraft",
+      "cli_sha256": "3ec8d282a9ccfd0f4c193a1bbe187f481d579cd78e38ccd4a19a883d30dbdeea"
+    },
+    {
+      "name": "effectcraft",
+      "version": "0.9.2",
+      "source": "https://github.com/storytold/effectcraft",
+      "cli_sha256": "e324837f23bbcf495b19a780e63a9567fee0e9e2978f9807231d1ecf18aa2391"
+    },
+    {
+      "name": "pdfcraft",
+      "version": "0.7.1",
+      "source": "https://github.com/storytold/pdfcraft",
+      "cli_sha256": "7ca94af7c99e58866af16b461937b4b904630a795786602f10e0169f4e710784"
+    },
+    {
+      "name": "lightcraft",
+      "version": "0.7.1",
+      "source": "https://github.com/storytold/lightcraft",
+      "cli_sha256": "179711aa7e9fd2e689de798a5e5a1201cc109834968e9ddf7cc895675cd5f494"
+    },
+    {
+      "name": "filmcraft",
+      "version": "0.7.2",
+      "source": "https://github.com/storytold/filmcraft",
+      "cli_sha256": "3e60a6d118dc3c7005e5fef7e68a9fe8115177e356db1f721735dfb9bc8a8a0a"
+    },
+    {
+      "name": "designcraft",
+      "version": "0.7.1",
+      "source": "https://github.com/storytold/designcraft",
+      "cli_sha256": "19631a4ce1bf92e45ac937a3b2161cf138d8de5de576c9797801c98eee1602f9"
+    }
+  ]
+}

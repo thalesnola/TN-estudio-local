@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "photocraft": {
+      "command": "C:/Apps/photocraft-0.8.2-windows-x64-portable/photocraft-cli.exe",
+      "args": ["mcp", "--automation-read-root", "C:/Users/<USUARIO>/estudio-local/trabalho", "--automation-write-root", "C:/Users/<USUARIO>/estudio-local/trabalho/saida"]
+    },
+    "vectorcraft": {
+      "command": "C:/Apps/vectorcraft-0.10.0-windows-x64-portable/vectorcraft-cli.exe",
+      "args": ["mcp", "--automation-read-root", "C:/Users/<USUARIO>/estudio-local/trabalho", "--automation-write-root", "C:/Users/<USUARIO>/estudio-local/trabalho/saida"]
+    },
+    "effectcraft": {
+      "command": "C:/Apps/effectcraft-0.9.2-windows-x64-portable/effectcraft-cli.exe",
+      "args": ["mcp", "--automation-read-root", "C:/Users/<USUARIO>/estudio-local/trabalho", "--automation-write-root", "C:/Users/<USUARIO>/estudio-local/trabalho/saida"]
+    },
+    "pdfcraft": {
+      "command": "C:/Apps/pdfcraft-0.7.1-windows-x64-portable/pdfcraft-cli.exe",
+      "args": ["mcp", "--root", "C:/Users/<USUARIO>/estudio-local/trabalho", "--compact"]
+    },
+    "lightcraft": {
+      "command": "C:/Apps/lightcraft-0.7.1-windows-x64-portable/lightcraft-cli.exe",
+      "args": ["mcp", "--library", "C:/Users/<USUARIO>/estudio-local/trabalho/lightcraft-biblioteca", "--compact"]
+    },
+    "filmcraft": {
+      "command": "C:/Apps/filmcraft-0.7.2-windows-x64-portable/filmcraft-cli.exe",
+      "args": ["mcp"]
+    },
+    "designcraft": {
+      "command": "C:/Apps/designcraft-0.7.1-windows-x64-portable/designcraft-cli.exe",
+      "args": ["mcp"]
+    }
+  }
+}

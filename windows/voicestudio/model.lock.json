@@ -1,0 +1,14 @@
+{
+  "repository": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "files": [
+    {
+      "path": "model.safetensors",
+      "sha256": "730839316de585f4c8298ec0e1712efc10fb19c6fa4e36eb741cb8d51ebcf6aa"
+    },
+    {
+      "path": "audio_tokenizer/model.safetensors",
+      "sha256": "fe7c5e8785e0a05833e1bfc3e002ec7f55af21e306b2e7154a448c1f54ccfb0d"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<!doctype html><meta charset=utf-8><body style="margin:0;background:#0b0b12;overflow:hidden">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<h1 id=t style="position:absolute;inset:0;margin:0;display:grid;place-items:center;color:#a78bfa;font:700 140px system-ui">Vídeo como código</h1>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.from('#t',{opacity:0,scale:.6,duration:1,ease:'back.out(2)'}).to('#t',{color:'#fff',duration:1},1);
+window.__duration=3;window.__seek=t=>{tl.time(t);};
+</script>

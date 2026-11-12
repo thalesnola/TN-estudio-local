@@ -1,0 +1,58 @@
+{
+  "photocraft": {
+    "repository": "storytold/photocraft",
+    "version": "v0.20.2",
+    "asset": "photocraft-cli-0.20.2-macos-universal.zip",
+    "url": "https://github.com/storytold/photocraft/releases/download/v0.20.2/photocraft-cli-0.20.2-macos-universal.zip",
+    "sha256": "25f90078e0a3201ac4bd7778bbb4f6de1f2b67357c98e1cc54052d6240eaaa35",
+    "checksums_url": "https://github.com/storytold/photocraft/releases/download/v0.20.2/SHA256SUMS.txt"
+  },
+  "vectorcraft": {
+    "repository": "storytold/vectorcraft",
+    "version": "v0.21.1",
+    "asset": "vectorcraft-cli-0.21.1-macos-universal.zip",
+    "url": "https://github.com/storytold/vectorcraft/releases/download/v0.21.1/vectorcraft-cli-0.21.1-macos-universal.zip",
+    "sha256": "1812e57498785d39485865d8fc7d9f6990f313217a2411c3d303ad17fe6e9181",
+    "checksums_url": "https://github.com/storytold/vectorcraft/releases/download/v0.21.1/SHA256SUMS.txt"
+  },
+  "effectcraft": {
+    "repository": "storytold/effectcraft",
+    "version": "v0.21.1",
+    "asset": "effectcraft-cli-0.21.1-macos-universal.zip",
+    "url": "https://github.com/storytold/effectcraft/releases/download/v0.21.1/effectcraft-cli-0.21.1-macos-universal.zip",
+    "sha256": "6072d7fc51f503ebfc3daef78ec2dbc3e7bbf400f4cd5f4f559a28371d8ceb1c",
+    "checksums_url": "https://github.com/storytold/effectcraft/releases/download/v0.21.1/SHA256SUMS.txt"
+  },
+  "pdfcraft": {
+    "repository": "storytold/pdfcraft",
+    "version": "v0.18.2",
+    "asset": "pdfcraft-cli-0.18.2-macos-universal.zip",
+    "url": "https://github.com/storytold/pdfcraft/releases/download/v0.18.2/pdfcraft-cli-0.18.2-macos-universal.zip",
+    "sha256": "34eb1ac0e366dd839adb6f3e6ed05c0a0f04957399c73dfb28e666a03ad35303",
+    "checksums_url": "https://github.com/storytold/pdfcraft/releases/download/v0.18.2/SHA256SUMS.txt"
+  },
+  "lightcraft": {
+    "repository": "storytold/lightcraft",
+    "version": "v0.18.1",
+    "asset": "lightcraft-cli-0.18.1-macos-universal.zip",
+    "url": "https://github.com/storytold/lightcraft/releases/download/v0.18.1/lightcraft-cli-0.18.1-macos-universal.zip",
+    "sha256": "519b9dcaef272a0472604f333acb40a4380df731ef810e738e42f099e3a868b9",
+    "checksums_url": "https://github.com/storytold/lightcraft/releases/download/v0.18.1/SHA256SUMS.txt"
+  },
+  "filmcraft": {
+    "repository": "storytold/filmcraft",
+    "version": "v0.17.1",
+    "asset": "filmcraft-cli-0.17.1-macos-universal.zip",
+    "url": "https://github.com/storytold/filmcraft/releases/download/v0.17.1/filmcraft-cli-0.17.1-macos-universal.zip",
+    "sha256": "ca0749fecd44c51caee419d90938d24ce322340d7af1d1660605166f1ecd2755",
+    "checksums_url": "https://github.com/storytold/filmcraft/releases/download/v0.17.1/SHA256SUMS.txt"
+  },
+  "designcraft": {
+    "repository": "storytold/designcraft",
+    "version": "v0.17.2",
+    "asset": "designcraft-cli-0.17.2-macos-universal.zip",
+    "url": "https://github.com/storytold/designcraft/releases/download/v0.17.2/designcraft-cli-0.17.2-macos-universal.zip",
+    "sha256": "3d3b0ad3cda23344dbfba5f08a46dbfc81a02477dc644ca2b1266dee23198372",
+    "checksums_url": "https://github.com/storytold/designcraft/releases/download/v0.17.2/SHA256SUMS.txt"
+  }
+}

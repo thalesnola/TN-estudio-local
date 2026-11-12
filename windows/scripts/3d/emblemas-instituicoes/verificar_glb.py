@@ -1,0 +1,26 @@
+"""Importa o GLB num Blender limpo e renderiza frente e verso (EEVEE) para conferencia.
+   blender -b -P scripts/verificar_glb.py -- SIGLA pasta_saida"""
+import bpy, math, sys, os
+from mathutils import Vector
+sig, out = sys.argv[sys.argv.index("--") + 1:][:2]
+R = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+bpy.ops.wm.read_factory_settings(use_empty=True)
+bpy.ops.import_scene.gltf(filepath=os.path.join(R, "modelo-3d", f"{os.environ.get('TIPO','emblema')}-{sig.lower()}-3d.glb"))
+objs = [o for o in bpy.context.scene.objects if o.type == 'MESH']
+print("MALHAS", len(objs), sum(len(o.data.polygons) for o in objs))
+w = bpy.data.worlds.new("W"); w.use_nodes = True
+w.node_tree.nodes["Background"].inputs[0].default_value = (0.6, 0.6, 0.62, 1); w.node_tree.nodes["Background"].inputs[1].default_value = 1.0
+bpy.context.scene.world = w
+bpy.ops.object.light_add(type='AREA', location=(2, -3, 3)); l = bpy.context.object; l.data.energy = 400; l.data.size = 3
+l.rotation_euler = (Vector((0, 0, 0)) - l.location).to_track_quat('-Z', 'Y').to_euler()
+bpy.ops.object.camera_add(location=(0, -5, 0.3)); cam = bpy.context.object; bpy.context.scene.camera = cam
+cam.rotation_euler = (Vector((0, 0, 0.0)) - cam.location).to_track_quat('-Z', 'Y').to_euler()
+s = bpy.context.scene
+for e in ('BLENDER_EEVEE_NEXT', 'BLENDER_EEVEE'):
+    try: s.render.engine = e; break
+    except TypeError: pass
+s.render.resolution_x = s.render.resolution_y = 700
+for tag, rz in (("frente", 0), ("verso", math.pi)):
+    for o in bpy.context.scene.objects:
+        if o.parent is None and o.type in ('EMPTY', 'MESH'): o.rotation_mode = 'XYZ'; o.rotation_euler = (0, 0, rz)
+    s.render.filepath = os.path.join(out, f"glb_{sig}_{tag}.png"); bpy.ops.render.render(write_still=True)

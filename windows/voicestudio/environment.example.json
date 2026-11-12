@@ -1,0 +1,21 @@
+{
+  "OMNIVOICE_PRELOAD_TTS_ASR": "0",
+  "OMNIVOICE_MCP_BASE_PATH": "C:/Tools/audio-visual/trabalho/voz",
+  "OMNIVOICE_BIND_HOST": "127.0.0.1",
+  "HF_HUB_DISABLE_TELEMETRY": "1",
+  "OMNIVOICE_DEVICE": "cuda",
+  "OMNIVOICE_PRELOAD_CAPTURE_ASR": "0",
+  "OMNIVOICE_CACHE_DIR": "C:/Tools/audio-visual/voice-runtime/models",
+  "OMNIVOICE_DATA_DIR": "C:/Tools/audio-visual/trabalho/voice-backend",
+  "OMNIVOICE_API_URL": "http://127.0.0.1:3917",
+  "OMNIVOICE_TTS_BACKEND": "omnivoice",
+  "OMNIVOICE_MCP_OUTPUT_MODE": "files",
+  "OMNIVOICE_PRELOAD_WATERMARK": "0",
+  "OMNIVOICE_PORT": "3917",
+  "PYTHONUTF8": "1",
+  "OMNIVOICE_MODEL": "C:/Tools/audio-visual/voice-runtime/models/models--k2-fsa--OmniVoice/snapshots/c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "HF_HUB_OFFLINE": "1",
+  "TRANSFORMERS_OFFLINE": "1",
+  "HF_HUB_DISABLE_IMPLICIT_TOKEN": "1",
+  "OMNIVOICE_ASR_BACKEND": "pytorch-whisper"
+}
